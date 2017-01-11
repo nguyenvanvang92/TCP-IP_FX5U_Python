@@ -8,6 +8,7 @@
 		<meta name="keyword" content="vuletech,data management information" />
 		<link type="text/css" rel="stylesheet" href="style.css" />
 		<link type="text/css" rel="stylesheet" href="normalize.css" />
+		<script src='Chart.min.js'></script>
 	</head>
 	<body>
 		<div id="container">
@@ -29,6 +30,25 @@
 					<div id="logo"><img src="img/vuletech_logo_web.png" alt="Vule tech" /></div>
 					<div id="slogan"><h3>Test export data into website</h3></div>
 				</div><!--#header-->
+<canvas id="buyers" width="920" height="200"></canvas>
+<script>
+// line chart data
+    var buyerData = {
+    labels : ["January","February","March","April","May","June"],
+    datasets : [
+        {
+            fillColor : "rgba(172,194,132,0.4)",
+            strokeColor : "#ACC26D",
+            pointColor : "#fff",
+            pointStrokeColor : "#9DB86D",
+            data : [203,156,99,251,305,247]
+        }
+    ]
+}
+    var buyers = document.getElementById('buyers').getContext('2d');
+    new Chart(buyers).Line(buyerData);
+
+</script>
 
 				<div class="call-to-action">
 					<h3>text 1</h3>
