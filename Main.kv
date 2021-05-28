@@ -1,0 +1,261 @@
+WindowManager:
+    id: screen_manager
+    MainWindow:
+
+<MainWindow>:
+    name: "Main"
+    BoxLayout:
+        orientation: 'vertical'
+        GridLayout:
+            rows: 3
+            cols: 1
+            #Title
+            GridLayout:
+                rows: 1
+                cols: 3
+                size_hint_y: 0.1
+                #padding : 10
+                background_color : 128/255,128/255,128/255,1
+                GridLayout:
+                    rows: 1
+                    cols: 4
+                    size_hint_y: 0.1
+                    padding : 1
+                    background_color : 128/255,128/255,128/255,1
+
+                    Label:
+                        size_hint_x : 0.125
+                        canvas.before:
+                            Color:
+                                rgba: 224/255,224/255,224/255,1
+                            Rectangle:
+                                pos: self.pos
+                                size: self.size
+                        canvas.after:
+                            Color:
+                                rgba: 18/255,111/255,183/255,1
+                            Rectangle:
+                                source: "image/Logo VULETECH.png"
+                                pos : self.pos[0], self.pos[1] - self.height/3.2
+                                size: self.width, self.height*1.7
+                    GridLayout:
+                        rows: 2
+                        cols: 1
+                        size_hint_x : 0.125
+                        #padding : 1
+                        background_color : 128/255,128/255,128/255,1
+                        Label:
+                            size_hint_x : 0.1
+                            text: "10:47"
+                            color : 0/255,122/255,204/255,1
+                            pos : self.pos[0] , self.pos[1]
+                            font_size : self.height - self.height*0.4
+                            canvas.before:
+                                Color:
+                                    rgba: 224/255,224/255,224/255,1
+                                Rectangle:
+                                    pos: self.pos
+                                    size: self.size
+
+                        Label:
+                            size_hint_x : 0.1
+                            text: "19/10/2020"
+                            color : 0/255,122/255,204/255,1
+                            pos : self.pos[0] , self.pos[1]
+                            font_size : self.height - self.height*0.4
+                            canvas.before:
+                                Color:
+                                    rgba: 224/255,224/255,224/255,1
+                                Rectangle:
+                                    pos: self.pos
+                                    size: self.size
+
+
+                    GridLayout:
+                        rows: 2
+                        cols: 1
+                        size_hint_x : 0.5
+                        padding : 1
+                        background_color : 224/255,224/255,224/255,1
+                        Label:
+                            size_hint_x : 0.6
+                            text: "HE THONG XU LY NUOC SACH"
+                            color : 0/255,0/255,204/255,1
+                            pos : self.pos[0] , self.pos[1]
+                            font_size : self.height - self.height*0.2
+                            canvas.before:
+                                Color:
+                                    rgba: 224/255,224/255,224/255,1
+                                Rectangle:
+                                    pos: self.pos
+                                    size: self.size
+
+                        Label:
+                            size_hint_x : 0.6
+                            text: "NHA MAY XUAN QUANG 3"
+                            color : 0/255,0/255,204/255,1
+                            pos : self.pos[0] , self.pos[1]
+                            font_size : self.height - self.height*0.2
+                            canvas.before:
+                                Color:
+                                    rgba: 224/255,224/255,224/255,1
+                                Rectangle:
+                                    pos: self.pos
+                                    size: self.size
+                    GridLayout:
+                        rows: 1
+                        cols: 3
+                        size_hint_x : 0.25
+                        padding : 1
+                        background_color : 224/255,224/255,224/255,1
+                        GridLayout:
+                            rows: 1
+                            cols: 3
+                            size_hint_x : 0.125
+                            padding : 1
+                            background_color : 224/88,224/88,224/88,1
+                            Button:
+                                size_hint_x : 0.125
+                                background_color : 224/88,224/88,224/88,1
+                                canvas.before:
+                                    Color:
+                                        rgba: 224/255,224/255,224/255,1
+                                    Rectangle:
+                                        pos: self.pos
+                                        size: self.size
+                                canvas.after:
+                                    Color:
+                                        rgba: 1,1,1,1
+                                    Rectangle:
+                                        source: "image/Home_96px.png"
+                                        pos : self.pos[0]+ (self.width - (self.width-(self.width*0.5)))/2, self.pos[1]+ (self.height - (self.height))/2
+                                        size: self.width-self.width*0.5, self.height
+                        GridLayout:
+                            rows: 1
+                            cols: 3
+                            size_hint_x : 0.125
+                            padding : 1
+                            background_color : 224/88,224/88,224/88,1
+                            Button:
+                                size_hint_x : 0.125
+                                background_color : 224/88,224/88,224/88,1
+                                canvas.before:
+                                    Color:
+                                        rgba: 224/255,224/255,224/255,1
+                                    Rectangle:
+                                        pos: self.pos
+                                        size: self.size
+                                canvas.after:
+                                    Color:
+                                        rgba: 1,1,1,1
+                                    Rectangle:
+                                        source: "image/ID not Verified_100px.png"
+                                        pos : self.pos[0]+ (self.width - (self.width-(self.width*0.5)))/2, self.pos[1]+ (self.height - (self.height))/2
+                                        size: self.width-self.width*0.5, self.height
+                        GridLayout:
+                            rows: 1
+                            cols: 3
+                            size_hint_x : 0.125
+                            padding : 1
+                            Button:
+                                size_hint_x : 0.125
+                                background_color : 224/88,224/88,224/88,1
+                                canvas.before:
+                                    Color:
+                                        rgba: 224/255,224/255,224/255,1
+                                    Rectangle:
+                                        pos: self.pos
+                                        size: self.size
+                                canvas.after:
+                                    Color:
+                                        rgba: 1,1,1,1
+                                    Rectangle:
+                                        source: "image/Registration_50px.png"
+                                        pos : self.pos[0]+ (self.width - (self.width-(self.width*0.5)))/2, self.pos[1]+ (self.height - (self.height))/2
+                                        size: self.width-self.width*0.5, self.height
+            #Main
+            GridLayout:
+                rows: 1
+                cols: 6
+                padding : 1
+                size_hint_y: 0.8
+                background_color : 208/255,208/255,208/255,0.1
+                GridLayout:
+                    rows: 3
+                    cols: 3
+                    padding: 10
+                    spacing: 10
+                    Label:
+                        text: 'option'
+                    Label:
+                        text: 'memory address'
+                    Label:
+                        text: 'data content'
+                    Button:
+                        text: 'Write'
+                        on_release:
+                            root.get_content_write()
+                    TextInput:
+                        id: id_content_address_meomory_write
+                    TextInput:
+                        id: id_content_write
+                    Button:
+                        text: 'Read'
+                    TextInput:
+                        id: id_content_address_memory_read
+                    Label:
+                        id: id_label_content_read
+                        text: ''
+
+            #Status
+            GridLayout:
+                rows: 1
+                cols: 6
+                padding : 1
+                size_hint_y: 0.06
+                background_color : 37/255,37/255,37/255,1
+
+                Button:
+                    size_hint_x: 0.2
+                    id: kv_txtStatus_btnConnect
+                    kv_ColorBackgroud_btnConnect: (1,0,0,1)
+                    background_color : self.kv_ColorBackgroud_btnConnect
+                    color_canvas: (1,0,0,1)
+                    text: "DISCONNECT"
+                    canvas.after:
+                        Color:
+                            rgba:(1,1,1,0)
+                        Rectangle:
+                            source: "image/icon/Ceiling Light_OFF.png"
+                            pos: self.pos[0]+ (self.width - (self.width-(self.width*0.5)))/2, self.pos[1]+ (self.height - (self.height-(self.height/self.width)*(self.width*0.7)))/2
+                            size: self.width-self.width*0.5, self.height-(self.height/self.width)*(self.width*0.7)
+                    on_release:
+                        root.btnConnect(self)
+                TextInput:
+                    id : kv_IP_PLC
+                    text: "192.168.1.40"
+                    size_hint_x: 0.2
+                    font_size : self.height - self.height*0.6
+
+                Label:
+                    size_hint_x: 0.6
+                    font_size : self.height - self.height*0.5
+                    canvas.before:
+                        Color:
+                            rgba: 0/255,37/255,37/255,1
+                        Rectangle:
+                            pos: self.pos
+                            size: self.size
+                Label:
+                    size_hint_x: 0.1
+                    font_size : self.height - self.height*0.5
+                    canvas.before:
+                        Color:
+                            rgba: 0/255,123/255,37/255,1
+                        Rectangle:
+                            pos: self.pos
+                            size: self.size
+
+
+
+
